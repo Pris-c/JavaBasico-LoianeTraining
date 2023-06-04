@@ -15,8 +15,6 @@ deverá ter o dobro de elementos de A e B, ou seja, 20 elementos.*/
         int[] B = new int[A.length];
         int[] C = new int[(A.length) + (B.length)];
 
-
-
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i<A.length; i++){

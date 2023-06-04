@@ -1,5 +1,7 @@
 package aula19;
 
+import java.util.Random;
+
 public class Exercicio32 {
 /*Criar um vetor A com 5 elementos inteiros. Escreva um programa que
 imprima a tabuada de cada um dos elementos do vetor A.*/
@@ -7,10 +9,11 @@ imprima a tabuada de cada um dos elementos do vetor A.*/
     public static void main(String[] args) {
 
         int[] A = new int[20];
+        Random random = new Random();
 
         System.out.print("A = ");
         for (int i = 0; i<5; i++){
-            A[i] = i+3;
+            A[i] = random.nextInt(10);
             System.out.print(A[i] + ", ");
         }
 

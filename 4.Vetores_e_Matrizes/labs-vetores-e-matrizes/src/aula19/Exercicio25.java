@@ -1,5 +1,7 @@
 package aula19;
 
+import java.util.Random;
+
 public class Exercicio25 {
 /*
     Criar um vetor A com 10 elementos inteiros. Construir um vetor B de
@@ -11,17 +13,12 @@ public class Exercicio25 {
 
         int[] arrayInt = new int[10];
         int[] arrayB = new int[arrayInt.length];
+        Random random = new Random();
 
-        arrayInt[0] = 9;
-        arrayInt[1] = 7;
-        arrayInt[2] = 7;
-        arrayInt[3] = 3;
-        arrayInt[4] = 4;
-        arrayInt[5] = 4;
-        arrayInt[6] = 8;
-        arrayInt[7] = 2;
-        arrayInt[8] = 10;
-        arrayInt[9] = 0;
+
+        for (int i = 0; i< arrayInt.length; i++) {
+            arrayInt[i] = random.nextInt(10);
+        }
 
         for (int i = 0; i< arrayInt.length; i++) {
             int n = arrayInt[i];

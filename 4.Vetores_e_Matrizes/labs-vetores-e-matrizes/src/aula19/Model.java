@@ -6,15 +6,16 @@ public class Model {
 
 
     public static void main(String[] args) {
-
+/*
         Scanner scanner = new Scanner(System.in);
 
         int i = scanner.nextInt();
         scanner.nextLine();
         String s =  scanner.nextLine();
-        System.out.println(s);
+        System.out.println(s);*/
 
-
+        int n = 10;
+        int[] vetor = new int[n];
 
     }
 }

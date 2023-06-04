@@ -1,5 +1,7 @@
 package aula19;
 
+import java.util.Random;
+
 public class Exercicio34 {
 /*Criar um vetor A com 10 elementos inteiros. Escreva um programa que
 imprima cada elemento do vetor A e a relação de todos os pares de 0
@@ -9,9 +11,11 @@ até o respectivo elemento.*/
 
         int[] A = new int[10];
 
+        Random random = new Random();
+
         System.out.print("A = ");
         for (int i = 0; i < A.length; i++) {
-            A[i] = i + 7;
+            A[i] = random.nextInt(100);
             System.out.print(A[i] + ", ");
         }
 

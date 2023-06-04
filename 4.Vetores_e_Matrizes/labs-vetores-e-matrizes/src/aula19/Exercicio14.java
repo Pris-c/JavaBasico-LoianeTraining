@@ -1,5 +1,7 @@
 package aula19;
 
+import java.util.Random;
+
 public class Exercicio14 {
     /*Criar um vetor A com 10 elementos inteiros. Implementar um programa
 que defina e escreva a média aritmética simples dos elementos
@@ -11,8 +13,10 @@ que defina e escreva a média aritmética simples dos elementos
         double soma = 0;
         double cont = 0;
 
+        Random random = new Random();
+
         for (int i = 0; i <10; i++){
-            vetor[i] = i;
+            vetor[i] = random.nextInt(15);
         }
 
         for (int num: vetor) {
@@ -22,8 +26,13 @@ que defina e escreva a média aritmética simples dos elementos
             }
         }
 
+        System.out.print("A = ");
+        for (int i =0; i < vetor.length; i++){
+            System.out.print(vetor[i] + " ");
+        }
+
         double media = soma/cont;
-        System.out.println("Media dos numeros impares = " + media);
+        System.out.println("\nMedia dos numeros impares = " + media);
 
     }
 }

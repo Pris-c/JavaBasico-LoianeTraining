@@ -25,7 +25,12 @@ anos.*/
             }
         }
 
-        System.out.println("Pessoas com mais de 35 anos: " + cont);
+        System.out.print("A = ");
+        for (int i =0; i < idades.length; i++){
+            System.out.print(idades[i] + " ");
+        }
+
+        System.out.println("\nPessoas com mais de 35 anos: " + cont);
 
 
 

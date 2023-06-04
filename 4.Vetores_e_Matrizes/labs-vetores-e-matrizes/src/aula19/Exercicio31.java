@@ -21,7 +21,6 @@ restantes do vetor B armazene os elementos de A que são ímpares.*/
             System.out.print(A[i] + ", ");
         }
 
-
         for (int i=0; i< A.length; i++) {
             if ((A[i]%2) == 0){
                 B[contPar] = A[i];

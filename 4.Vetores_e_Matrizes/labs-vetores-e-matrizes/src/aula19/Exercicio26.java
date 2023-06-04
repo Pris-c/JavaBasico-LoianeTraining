@@ -1,5 +1,7 @@
 package aula19;
 
+import java.util.Random;
+
 public class Exercicio26 {
 /*Criar dois vetores A e B cada um com 10 elementos inteiros. Construir
 um vetor C de mesmo tipo e tamanho, obedecendo as seguintes
@@ -15,21 +17,11 @@ c) Ci deverá receber -1 quando Ai for menor que Bi.*/
         int[] arrayB = new int[arrayInt.length];
         int[] arrayC = new int[arrayInt.length];
 
-        arrayInt[0] = 3;
-        arrayInt[1] = 7;
-        arrayInt[2] = 7;
-        arrayInt[3] = 3;
-        arrayInt[4] = 4;
-        arrayInt[5] = 4;
-        arrayInt[6] = 8;
-        arrayInt[7] = 2;
-        arrayInt[8] = 11;
-        arrayInt[9] = 0;
-
+        Random random = new Random();
 
         for (int i = 0; i < arrayInt.length; i++) {
-
-            arrayB[i] = i + 3;
+            arrayB[i] = random.nextInt(15);
+            arrayInt[i] = random.nextInt(15);
 
             if (arrayInt[i] > arrayB[i]) {
                 arrayC[i] = 1;

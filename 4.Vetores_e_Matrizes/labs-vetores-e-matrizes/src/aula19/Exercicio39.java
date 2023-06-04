@@ -1,5 +1,7 @@
 package aula19;
 
+import java.util.Random;
+
 public class Exercicio39 {
 /*Criar dois vetores A e B cada um com 10 elementos inteiros.
 Desenvolver um programa que realize a interseção dos vetores A e B
@@ -18,9 +20,11 @@ elementos que existem em A e também existem em B.*/
 
         boolean add = false;
 
+        Random random = new Random();
+
         for (int i = 0; i < A.length; i++) {
-            A[i] = (i+1)*2;
-            B[i] = (i+1)*3;
+            A[i] = random.nextInt(10);
+            B[i] = random.nextInt(10);
         }
 
         int contC = 0;

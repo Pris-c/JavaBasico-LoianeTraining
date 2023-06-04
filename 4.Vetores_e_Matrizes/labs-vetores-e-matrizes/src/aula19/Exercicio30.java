@@ -21,7 +21,6 @@ que nos vetor B e C serão armazenados o valores pares e ímpares de A, respecti
             System.out.print(A[i] + " - ");
         }
 
-
         for (int a: A) {
             if ( (a%2) == 0){
                 B[contB] = a;

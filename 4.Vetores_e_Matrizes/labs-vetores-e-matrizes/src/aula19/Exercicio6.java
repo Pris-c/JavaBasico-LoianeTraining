@@ -1,5 +1,7 @@
 package aula19;
 
+import java.util.Random;
+
 public class Exercicio6 {
     /*Criar dois vetores A e B cada um com 10 elementos inteiros. Construir
 um vetor C, onde cada elemento de C é a soma dos respectivos
@@ -13,9 +15,11 @@ C[i] = A[i] + B[i].*/
         int[] B = new int[A.length];
         int[] C = new int[A.length];
 
+        Random random = new Random();
+
         for (int i =0; i < A.length; i++){
-            B[i] = i + (50 % (i+2));
-            A[i] = 3 + i;
+            B[i] = random.nextInt(9);
+            A[i] = random.nextInt(9);
 
             C[i] = A[i] + B[i];
         }

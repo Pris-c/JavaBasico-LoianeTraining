@@ -1,6 +1,7 @@
 package aula19;
 
 import java.text.DecimalFormat;
+import java.util.Random;
 
 public class Exercicio9 {
     /*Criar dois vetores A e B cada um com 10 elementos inteiros. Construir
@@ -12,14 +13,16 @@ elementos em A e B, ou seja:*/
         double[] A = new double[10];
         int[] B = new int[A.length];
         double[] C = new double[B.length];
+        double max = 10;
+        double min = 0;
+
+        Random random = new Random();
 
         for (int i =0; i < A.length; i++){
-            B[i] = i + 15;
-            A[i] = 3 + i;
+            B[i] = random.nextInt(10);
+            A[i] = random.nextInt(10);
 
             C[i] = A[i] / B[i];
-
-
         }
 
         //  .## número de casas decimais

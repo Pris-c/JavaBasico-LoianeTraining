@@ -1,5 +1,7 @@
 package aula19;
 
+import java.util.Random;
+
 public class Exercicio8 {
 /*Criar dois vetores A e B cada um com 10 elementos inteiros. Construir
 um vetor C, onde cada elemento de C é a multiplicação dos
@@ -13,9 +15,11 @@ C[i] = A[i] * B[i].*/
             int[] B = new int[A.length];
             int[] C = new int[A.length];
 
+            Random random = new Random();
+
             for (int i =0; i < A.length; i++){
-                B[i] = i +2;
-                A[i] = 3 + i;
+                B[i] = random.nextInt(10);
+                A[i] = random.nextInt(10);
 
                 C[i] = A[i] * B[i];
 
