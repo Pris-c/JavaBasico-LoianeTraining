@@ -36,25 +36,24 @@ deve atualizar a situação do tabuleiro na tela.*/
 
         do {
 
-            System.out.println("\t"+jogo[0][0]+"\t|\t"+jogo[0][1]+"\t|\t"+jogo[0][2]);
-            System.out.println("\t"+jogo[1][0]+"\t|\t"+jogo[1][1]+"\t|\t"+jogo[1][2]);
-            System.out.println("\t"+jogo[2][0]+"\t|\t"+jogo[2][1]+"\t|\t"+jogo[2][2]);
+            System.out.println("\t" + jogo[0][0] + "\t|\t" + jogo[0][1] + "\t|\t" + jogo[0][2]);
+            System.out.println("\t" + jogo[1][0] + "\t|\t" + jogo[1][1] + "\t|\t" + jogo[1][2]);
+            System.out.println("\t" + jogo[2][0] + "\t|\t" + jogo[2][1] + "\t|\t" + jogo[2][2]);
 
-
-            if (conJogadas % 2 == 0){
+            if (conJogadas % 2 == 0) {
                 jogador = 1;
                 marcaJog = "X";
             } else {
                 jogador = 2;
                 marcaJog = "O";
             }
-            System.out.println("JOGADOR " + jogador);
+            System.out.println("\nJOGADOR " + jogador);
             System.out.print("Escolha a posição da sua jogada: ");
             jogada = scanner.nextInt();
 
-            switch (jogada){
+            switch (jogada) {
                 case 1:
-                    if (!jogo[0][0].equals("1")){
+                    if (!jogo[0][0].equals("1")) {
                         System.out.println("\n\nJogada inválida.");
                         break;
                     } else {
@@ -62,9 +61,9 @@ deve atualizar a situação do tabuleiro na tela.*/
                         conJogadas++;
                         System.out.println("\n\n");
                     }
-                        break;
+                    break;
                 case 2:
-                    if (!((jogo[0][1]).equals("2"))){
+                    if (!((jogo[0][1]).equals("2"))) {
                         System.out.println("\n\nJogada inválida.");
                         break;
                     } else {
@@ -75,7 +74,7 @@ deve atualizar a situação do tabuleiro na tela.*/
 
                     }
                 case 3:
-                    if (!jogo[0][2].equals("3")){
+                    if (!jogo[0][2].equals("3")) {
                         System.out.println("\n\nJogada inválida.");
                         break;
                     } else {
@@ -85,7 +84,7 @@ deve atualizar a situação do tabuleiro na tela.*/
                     }
                     break;
                 case 4:
-                    if (!jogo[1][0].equals("4")){
+                    if (!jogo[1][0].equals("4")) {
                         System.out.println("\n\nJogada inválida.");
                         break;
                     } else {
@@ -95,7 +94,7 @@ deve atualizar a situação do tabuleiro na tela.*/
                     }
                     break;
                 case 5:
-                    if (!jogo[1][1].equals("5")){
+                    if (!jogo[1][1].equals("5")) {
                         System.out.println("\n\nJogada inválida.");
                         break;
                     } else {
@@ -105,7 +104,7 @@ deve atualizar a situação do tabuleiro na tela.*/
                     }
                     break;
                 case 6:
-                    if (!jogo[1][2].equals("6")){
+                    if (!jogo[1][2].equals("6")) {
                         System.out.println("\n\nJogada inválida.");
                         break;
                     } else {
@@ -115,7 +114,7 @@ deve atualizar a situação do tabuleiro na tela.*/
                     }
                     break;
                 case 7:
-                    if (!jogo[2][0].equals("7")){
+                    if (!jogo[2][0].equals("7")) {
                         System.out.println("\n\nJogada inválida.");
                         break;
                     } else {
@@ -125,7 +124,7 @@ deve atualizar a situação do tabuleiro na tela.*/
                     }
                     break;
                 case 8:
-                    if (!jogo[2][1].equals("8")){
+                    if (!jogo[2][1].equals("8")) {
                         System.out.println("\n\nJogada inválida.");
                         break;
                     } else {
@@ -135,7 +134,7 @@ deve atualizar a situação do tabuleiro na tela.*/
                     }
                     break;
                 case 9:
-                    if (!jogo[2][2].equals("9")){
+                    if (!jogo[2][2].equals("9")) {
                         System.out.println("\n\nJogada inválida.");
                         break;
                     } else {
@@ -148,9 +147,11 @@ deve atualizar a situação do tabuleiro na tela.*/
                     System.out.println("\n\nJogada inválida");
             }
 
-            //ANALISAR SE HÁ VENCEDOR
-
-            if (
+            //ANALISAR FIM DO JOGO
+            if (conJogadas == 9){
+                System.out.println("\nO JOGO ACABOU SEM VENCEDOR!");
+                break;
+            } else if (
                 (jogo[0][0].equalsIgnoreCase(jogo[0][1] ) && jogo[0][0].equalsIgnoreCase(jogo[0][2])) ||
                 (jogo[1][0].equalsIgnoreCase(jogo[1][1] ) && jogo[1][0].equalsIgnoreCase(jogo[1][2])) ||
                 (jogo[2][0].equalsIgnoreCase(jogo[2][1] ) && jogo[2][0].equalsIgnoreCase(jogo[2][2])) ||
@@ -159,14 +160,17 @@ deve atualizar a situação do tabuleiro na tela.*/
                 (jogo[0][1].equalsIgnoreCase(jogo[1][1] ) && jogo[0][1].equalsIgnoreCase(jogo[2][1])) ||
                 (jogo[0][2].equalsIgnoreCase(jogo[1][2] ) && jogo[0][2].equalsIgnoreCase(jogo[2][2])) ||
 
-                (jogo[0][1].equalsIgnoreCase(jogo[1][1] ) && jogo[0][1].equalsIgnoreCase(jogo[2][2])) ||
+                (jogo[0][0].equalsIgnoreCase(jogo[1][1] ) && jogo[0][0].equalsIgnoreCase(jogo[2][2])) ||
                 (jogo[0][2].equalsIgnoreCase(jogo[1][1] ) && jogo[0][2].equalsIgnoreCase(jogo[2][0]))
             ) {
+                System.out.println("\t"+jogo[0][0]+"\t|\t"+jogo[0][1]+"\t|\t"+jogo[0][2]);
+                System.out.println("\t"+jogo[1][0]+"\t|\t"+jogo[1][1]+"\t|\t"+jogo[1][2]);
+                System.out.println("\t"+jogo[2][0]+"\t|\t"+jogo[2][1]+"\t|\t"+jogo[2][2]);
                 winer = true;
-                System.out.println("JOGADOR " + jogador + " VENCEU!");
+                System.out.println("\n\tJOGADOR " + jogador + " VENCEU!");
             }
 
-        } while (!winer);
+        } while ( (!winer) || (conJogadas==9) );
 
     }
 }

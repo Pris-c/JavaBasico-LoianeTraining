@@ -11,7 +11,7 @@ quantidade de números pares, a quantidade de números ímpares.*/
 
         Scanner scanner = new Scanner(System.in);
         int[][] matriz = new int[3][3];
-        int n =0;
+        int n = 0;
         int contPar = 0;
         int contImp = 0;
 
@@ -35,8 +35,8 @@ quantidade de números pares, a quantidade de números ímpares.*/
                 n = matriz[i][j];
                 System.out.print(n + "\t");
             }
-
         }
+
         System.out.println("\n");
         System.out.println(contPar + " números pares");
         System.out.println(contImp + " números impares");
