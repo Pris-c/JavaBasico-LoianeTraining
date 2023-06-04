@@ -9,36 +9,27 @@ public class Exercicio1 {
 
         int[][] inteiros = new int[4][4];
 
-        int maior =0;
+        int maior = Integer.MIN_VALUE;
         int posX = 0;
         int posY =0;
 
         for (int i = 0; i < inteiros.length; i++){
+            System.out.println(" ");
             for (int j=0; j<inteiros[i].length; j++){
                 inteiros[i][j] = (int) Math.round(Math.random()*100);
 
-                if ( (i==0) && (j==0) ){
-                    maior = inteiros[i][j];
-                    posX = i;
-                    posY = j;
-                } else if (inteiros[i][j] > maior){
+                 if (inteiros[i][j] > maior){
                     maior = inteiros[i][j];
                     posX = i;
                     posY = j;
                 }
+
+                System.out.print(inteiros[i][j] + "\t");
             }
         }
-
-        for (int i = 0; i < inteiros.length; i++){
-            System.out.println("");
-            for (int j=0; j<inteiros[i].length; j++){
-                System.out.print(inteiros[i][j] + " - ");
-            }
-
-        }
-
+        System.out.println();
         System.out.println("\nMaior valor = " + maior);
-        System.out.println("Posição [" + posX + "] [" + posY + "]");
+        System.out.println("Posição [" + posX + "][" + posY + "]");
 
 
     }

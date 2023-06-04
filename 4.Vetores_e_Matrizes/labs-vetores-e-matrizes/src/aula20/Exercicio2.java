@@ -9,48 +9,36 @@ qual é o maior e o menor valor da coluna 7.*/
 
         int[][] matriz = new int[10][10];
 
-        int maiorL5 = 0;
-        int menorL5 = 0;
-        int maiorC7 = 0;
-        int menorC7 = 0;
+        int maiorL5 = Integer.MIN_VALUE;
+        int menorL5 = Integer.MAX_VALUE;
+        int maiorC7 = Integer.MIN_VALUE;
+        int menorC7 = Integer.MAX_VALUE;
         int n = 0;
 
         for (int i = 0; i < matriz.length; i++) {
-
+            System.out.println(" ");
             for (int j = 0; j < matriz[i].length; j++) {
-                matriz[i][j] = (int) Math.round(Math.random() * 100);
+                matriz[i][j] = (int) Math.round(Math.random() * 10);
 
                 n = matriz[i][j];
 
                 if (i == 5) {
-                    if (j == 0) {
-                        maiorL5 = n;
-                        menorL5 = n;
-                    } else if (n > maiorL5) {
+                    if (n > maiorL5) {
                         maiorL5 = n;
                     } else if ((n < menorL5)) {
                         menorL5 = n;
                     }
                 }
                 if (j == 7) {
-                    if (i == 0) {
-                        maiorC7 = n;
-                        menorC7 = n;
-                    } else if (n > maiorC7) {
+                    if (n > maiorC7) {
                         maiorC7 = n;
                     } else if ((n < menorC7)) {
                         menorC7 = n;
                     }
                 }
-
+                System.out.print(matriz[i][j] + "\t");
             }
-        }
-
-        for (int i = 0; i < matriz.length; i++){
-            System.out.println("");
-            for (int j=0; j<matriz[i].length; j++){
-                System.out.print(matriz[i][j] + " - ");
-            }
+            System.out.println(" ");
         }
 
         System.out.println("");
