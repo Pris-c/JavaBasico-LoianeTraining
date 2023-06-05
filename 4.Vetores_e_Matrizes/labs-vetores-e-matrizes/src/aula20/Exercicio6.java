@@ -47,6 +47,7 @@ deve atualizar a situação do tabuleiro na tela.*/
                 jogador = 2;
                 marcaJog = "O";
             }
+
             System.out.println("\nJOGADOR " + jogador);
             System.out.print("Escolha a posição da sua jogada: ");
             jogada = scanner.nextInt();
