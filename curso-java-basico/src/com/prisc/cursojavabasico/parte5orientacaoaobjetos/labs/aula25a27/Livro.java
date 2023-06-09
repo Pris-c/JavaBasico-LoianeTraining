@@ -1,4 +1,4 @@
-package com.prisc.cursojavabasico.parte5orientacaoaobjetos.labs;
+package com.prisc.cursojavabasico.parte5orientacaoaobjetos.labs.aula25a27;
 
 public class Livro {
 /*Crie uma classe Livro que represente os dados básicos de um livro,

@@ -1,4 +1,4 @@
-package com.prisc.cursojavabasico.parte5orientacaoaobjetos.labs;
+package com.prisc.cursojavabasico.parte5orientacaoaobjetos.labs.aula25a27;
 
 public class Aluno {
 /*Escreva uma class para representar um Aluno. Adicione atributos relacionados às caracteristicas
@@ -50,8 +50,5 @@ as informações  do aluno ao usuário e ao  final informa o nome das disciplina
             }
             System.out.println();
         }
-    }
-    void listarDisciplinas(int idDisciplina){
-
     }
 }

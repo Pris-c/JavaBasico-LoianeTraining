@@ -1,4 +1,4 @@
-package com.prisc.cursojavabasico.parte5orientacaoaobjetos.labs;
+package com.prisc.cursojavabasico.parte5orientacaoaobjetos.labs.aula25a27;
 
 public class ContaCorrente {
     /*Cria uma classe para representar uma  conta corrente que possui  um número,

@@ -1,4 +1,3 @@
-/*
 package aula24;
 
 public class Carro {
@@ -10,4 +9,3 @@ public class Carro {
     double consCombustivel;
 
 }
-*/

@@ -1,4 +1,4 @@
-package com.prisc.cursojavabasico.parte5orientacaoaobjetos.labs;
+package com.prisc.cursojavabasico.parte5orientacaoaobjetos.labs.aula25a27;
 
 import java.util.Scanner;
 
@@ -47,6 +47,7 @@ Desenvolva uma classe para testar o Jogo.*/
        }
        return jogador;
    }
+
  /*  void definirMarca(int jogador) {
         switch (jogador) {
             case 1:

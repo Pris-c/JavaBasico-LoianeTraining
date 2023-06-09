@@ -1,4 +1,4 @@
-package com.prisc.cursojavabasico.parte5orientacaoaobjetos.labs;
+package com.prisc.cursojavabasico.parte5orientacaoaobjetos.labs.aula25a27;
 
 public class Lampada {
 /*Escreva uma classe para representar uma lâmpada que
