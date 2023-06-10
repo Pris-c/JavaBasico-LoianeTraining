@@ -1,11 +1,9 @@
 package com.prisc.cursojavabasico.parte5orientacaoaobjetos.labs.aula28a33;
 
-import java.util.Scanner;
-
 public class JogoDaVelhaEx4 {
 
 
-    private String[][] jogo = new String[3][3];
+    private String[][] jogo;
     private int conJogadas;
     private boolean fimDeJogo;
 
@@ -19,9 +17,9 @@ public class JogoDaVelhaEx4 {
 
 
 
-    public void JogoDaVelhaEx4(){
-        //this.jogo = new String[3][3];   //não funcionou
-        //montarTabuleiro();              //não funcionou
+    public JogoDaVelhaEx4(){
+        this.jogo = new String[3][3];
+        montarTabuleiro();
         this.conJogadas = 0;
     }
 
@@ -41,7 +39,6 @@ public class JogoDaVelhaEx4 {
 
     public void setJogoPosicao(int i, int j, String jogada){
         this.jogo[i][j] = jogada;
-        //System.out.println("jogo [" + i+"]["+j+"] = " + jogada);
     }
 
     public int getConJogadas() {
@@ -123,17 +120,53 @@ public class JogoDaVelhaEx4 {
     private int[] definirJogada(int jogada){
         int[] posicao =  new int[3];
 
-        switch (jogada){
+        switch (jogada) {
             //posicao X, posicao Y, valor padrao.
-            case 1: posicao[0] = 0; posicao[1] = 0; posicao[2] = 1; break;
-            case 2: posicao[0] = 0; posicao[1] = 1; posicao[2] = 2; break;
-            case 3: posicao[0] = 0; posicao[1] = 2; posicao[2] = 3; break;
-            case 4: posicao[0] = 1; posicao[1] = 0; posicao[2] = 4; break;
-            case 5: posicao[0] = 1; posicao[1] = 1; posicao[2] = 5; break;
-            case 6: posicao[0] = 1; posicao[1] = 2; posicao[2] = 6; break;
-            case 7: posicao[0] = 2; posicao[1] = 0; posicao[2] = 7; break;
-            case 8: posicao[0] = 2; posicao[1] = 1; posicao[2] = 8; break;
-            case 9: posicao[0] = 2; posicao[1] = 2; posicao[2] = 9; break;
+            case 1 -> {
+                posicao[0] = 0;
+                posicao[1] = 0;
+                posicao[2] = 1;
+            }
+            case 2 -> {
+                posicao[0] = 0;
+                posicao[1] = 1;
+                posicao[2] = 2;
+            }
+            case 3 -> {
+                posicao[0] = 0;
+                posicao[1] = 2;
+                posicao[2] = 3;
+            }
+            case 4 -> {
+                posicao[0] = 1;
+                posicao[1] = 0;
+                posicao[2] = 4;
+            }
+            case 5 -> {
+                posicao[0] = 1;
+                posicao[1] = 1;
+                posicao[2] = 5;
+            }
+            case 6 -> {
+                posicao[0] = 1;
+                posicao[1] = 2;
+                posicao[2] = 6;
+            }
+            case 7 -> {
+                posicao[0] = 2;
+                posicao[1] = 0;
+                posicao[2] = 7;
+            }
+            case 8 -> {
+                posicao[0] = 2;
+                posicao[1] = 1;
+                posicao[2] = 8;
+            }
+            case 9 -> {
+                posicao[0] = 2;
+                posicao[1] = 2;
+                posicao[2] = 9;
+            }
         }
         return posicao;
     }

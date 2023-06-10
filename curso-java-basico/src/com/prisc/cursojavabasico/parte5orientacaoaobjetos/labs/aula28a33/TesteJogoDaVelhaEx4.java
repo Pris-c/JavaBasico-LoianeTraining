@@ -9,7 +9,7 @@ public class TesteJogoDaVelhaEx4 {
         Scanner scan = new Scanner(System.in);
         JogoDaVelhaEx4 jogo = new JogoDaVelhaEx4();
 
-        jogo.montarTabuleiro();
+       jogo.montarTabuleiro();
         jogo.exibirTabuleiro();
 
         do {

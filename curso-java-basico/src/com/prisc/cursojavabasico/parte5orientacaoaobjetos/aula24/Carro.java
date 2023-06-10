@@ -1,4 +1,4 @@
-package aula24;
+package com.prisc.cursojavabasico.parte5orientacaoaobjetos.aula24;
 
 public class Carro {
 
