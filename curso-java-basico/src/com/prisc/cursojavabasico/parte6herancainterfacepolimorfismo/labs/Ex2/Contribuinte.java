@@ -14,7 +14,6 @@ public class Contribuinte {
     }
 
 
-
     public Contribuinte() {
     }
 
@@ -28,5 +27,12 @@ public class Contribuinte {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    @Override
+    public String toString() {
+        return "Contribuinte{" +
+                "nome='" + nome + '\'' +
+                '}';
     }
 }

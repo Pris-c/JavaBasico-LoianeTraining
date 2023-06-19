@@ -4,6 +4,13 @@ public class PessoaFisica extends Contribuinte{
 
     String cpf;
 
+    @Override
+    public String toString() {
+        return "PessoaFisica{" +
+                "cpf='" + cpf + '\'' +
+                "} " + super.toString();
+    }
+
     public double calcularImposto(double rendaBruta){
         if (rendaBruta < 0 ){
             System.out.println("Renda inválida");
@@ -19,6 +26,8 @@ public class PessoaFisica extends Contribuinte{
         } else {
             return (rendaBruta * 0.30) - 700;
         }
+
+
 
     }
 

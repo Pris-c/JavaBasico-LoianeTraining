@@ -30,4 +30,11 @@ public class PessoaJuridica extends Contribuinte{
         super(nome);
         this.cnpj = cnpj;
     }
+
+    @Override
+    public String toString() {
+        return "PessoaJuridica{" +
+                "cnpj='" + cnpj + '\'' +
+                "} " + super.toString();
+    }
 }
